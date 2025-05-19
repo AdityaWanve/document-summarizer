@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 import os
 from werkzeug.utils import secure_filename
-from summarizer import extract_text, split_into_sentences, textrank_summary
+from text_summarizer import extract_text, split_into_sentences, textrank_summary
 
 app = Flask(__name__)
 UPLOAD_FOLDER = "uploads"
